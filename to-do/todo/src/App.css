@@ -1,0 +1,18 @@
+.main-div{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 50%;
+ left: 50%;
+ font-style: italic;
+ 
+};
+h1 {
+font-size: larger;
+font-style: italic;
+color: rgb(191, 46, 46);
+};
+.addItems{};
+.showItems{};
+.eachItem{};
+.todo-btn{};
