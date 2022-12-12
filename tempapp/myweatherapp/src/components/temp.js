@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import "./css/style.css";
+require('dotenv').config();
 
 const Tempapp = () => {
     const [city, setCity] = useState(null);
@@ -8,11 +9,11 @@ const Tempapp = () => {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q={search}&appid={309770ceed676ff1e82c49b3795a0b0c}`;
+            const url = 'https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={process.env.apikey}';
             const response = await axios.get(url);
 
-            const resJson = await response.json();
-            //console.log(resJson);
+            const resJson = await response();
+           // console.log(response);
             setCity(resJson.main);
         }
         fetchApi();
