@@ -97,3 +97,10 @@ function myPractice(topic , part){
 }
 const message = myPractice("react", "hooks");
 console.log(message);
+
+function love(affection, attachment ){
+    return "Affection is " + affection + ". Attachment is the root cause of suffering ." + attachment
+}
+const av = love('love', 'care');
+console.log(av);
+

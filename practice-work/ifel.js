@@ -39,3 +39,4 @@ else if(e==20){
 }
 else{ console.log('print nothing'
 )}
+//switch statement is used to execute one code from multiple expressions .
